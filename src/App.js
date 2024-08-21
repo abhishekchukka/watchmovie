@@ -51,7 +51,8 @@ const key = "b03e3319";
 // const query = "spiderman";
 export default function App() {
   const [movies, setMovies] = useState([]);
-  const [watched, setWatched] = useLocalstorage([], "store");
+  // const [watched, setWatched] = useLocalstorage([], "store");
+  const [watched, setWatched] = useState([]);
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [query, setQuery] = useState("");
